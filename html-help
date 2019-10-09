@@ -1,0 +1,636 @@
+HTML
+
+HTML is the standard markup language for creating Web pages.
+    • HTML stands for Hyper Text Markup Language 
+    • HTML describes the structure of Web pages using markup 
+    • HTML elements are the building blocks of HTML pages 
+    • HTML elements are represented by tags 
+    • HTML tags label pieces of content such as "heading", "paragraph", "table", and so on 
+    • Browsers do not display the HTML tags, but use them to render the content of the page 
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+
+</body>
+</html>
+
+HTML tags normally come in pairs like <p> and </p>.
+
+All HTML documents must start with a document type declaration: <!DOCTYPE html>.
+The HTML document itself begins with <html> and ends with </html>.
+The visible part of the HTML document is between <body> and </body>. 
+    1. HEADINGS : HTML headings are defined with the <h1> to <h6> tags.
+       
+    2.  PARAGRAPHS : defined within <p>___</p> tags.
+       
+    3. LINKS : HTML links are defined with the <a> tag.
+             <a href="https://www.w3schools.com">This is a link</a>
+ 
+       4.   IMAGES : HTML images are defined with the <img> tag.
+               <img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142">
+ 
+       5.    EMPTY ELEMENTS : <br> is an empty element without a closing tag (the <br> tag defines a                         
+              line break).  Empty elements can be "closed" in the opening tag like this: <br />.
+
+ATTRIBUTES : 
+All HTML elements can have attributes 
+    • Attributes provide additional information about an element 
+    • Attributes are always specified in the start tag 
+    • Attributes usually come in name/value pairs like: name="value" 
+    1. href attribute : The link address is specified in the href attribute: 
+        <a href="https://www.w3schools.com">This is a link</a>
+    2. src attribute : The filename of the image source is specified in the src attribute:
+       <img src="img_girl.jpg"> 
+    3. height and width attribute : specifies the width and height of the image:
+       <img src="img_girl.jpg" width="500" height="600"> 
+    4. alt attribute : specifies an alternative text to be used, when an image cannot be displayed.
+       <img src="img_girl.jpg" alt="Girl with a jacket"> 
+    5. style ttribute : specify the styling of an element, like color, font, size etc.
+       <p style="color:red">I am a paragraph</p> 
+    6. lang attribute : The language of the document can be declared in the <html> tag.
+       <html lang="en-US">
+    7. title attribute : is added to the <p> element. The value of the title attribute will be displayed as a tooltip when you mouse over the paragraph.
+       <p title="I'm a tooltip"></p>
+       
+Always quote attribute values with double quotes.
+
+The <hr> tag defines a thematic break in an HTML page, and is most often displayed as a horizontal rule.
+The <head> element is a container for metadata. HTML metadata is data about the HTML document. Metadata is not displayed.
+<head>
+  <title>My First HTML</title>
+  <meta charset="UTF-8">
+</head>
+
+The HTML <pre> element defines preformatted text.
+The text inside a <pre> element is displayed in a fixed-width font (usually Courier), and it preserves both spaces and line breaks:
+
+1)  BACKGROUND COLOR : The background-color property defines the background color for an HTML element.
+ <body style="background-color:powderblue;">
+
+2)  TEXT COLOR : The color property defines the text color for an HTML element.
+     <h1 style="color:blue;">This is a heading</h1>
+
+3)  FONT : defines the font to be used for an HTML element.
+    <h1 style="font-family:verdana;">This is a heading</h1>
+
+4) TEXT SIZE : defines the text size for an HTML element.
+    <h1 style="font-size:300%;">This is a heading</h1>
+
+5) TEXT ALIGNMENT : defines the horizontal text alignment for an HTML element.
+    <h1 style="text-align:center;">Centered Heading</h1>
+
+6) TEXT FORMATTING : Formatting elements were designed to display special types of text: (opening and closing tags)
+    • <b> - Bold text 
+    • <strong> - Important text 
+    • <i> - Italic text 
+    • <em> - Emphasized text 
+    • <mark> - Marked text    
+    • <small> - Small text 
+    • <del> - Deleted text    
+    • <ins> - Inserted text 
+    • <sub> - Subscript text 
+    • <sup> - Superscript text
+7) QUOTATIONS :
+    • The HTML <q> element defines a short quotation. Browsers usually insert quotation marks around the <q> element.
+    • The HTML <blockquote> element defines a section that is quoted from another source. Browsers usually indent <blockquote> elements.
+    • The HTML <abbr> element defines an abbreviation or an acronym. Marking abbreviations can give useful information to browsers, translation systems and search-engines. (like tooltips)
+      <abbr title="World Health Organization">WHO</abbr>
+    • The HTML <address> element defines contact information (author/owner) of a document or an article. The <address> element is usually displayed in italic. Most browsers will add a line break before and after the element. 
+      <address>
+Written by John Doe.<br> 
+Visit us at:<br>
+Example.com<br>
+Box 564, Disneyland<br>
+USA
+</address> 
+      
+    • The HTML <cite> element defines the title of a work. Browsers usually display <cite> elements in italic.      
+    • <cite>The Scream</cite>
+      
+    • The HTML <bdo> element defines bi-directional override. The <bdo> element is used to override the current text direction.  
+      <bdo dir="rtl">This text will be written from right to left</bdo> 
+
+8)   COMMENTS : Comment tags are used to insert comments in the HTML source code.
+      <!-- Write your comments here --> 
+     Conditional Comments      <!--[if IE 9]>
+                                                   .... some HTML here ....
+                                                 <![endif]-→
+
+9)  COLORS : can be defined using color names, RGB(red, green, blue), HEX(#rrggbb), HSL(hue, saturation, lightness), RGBA(red, green, blue, alpha), and HSLA(hue, saturation, lightness, alpha) values.
+    <p style="background-color:Tomato;">Lorem ipsum...</p>
+   <p style="color:DodgerBlue;">Lorem ipsum...</p>
+   <h1 style="border:2px solid Violet;">Hello World</h1>
+
+10) LINKS : The href attribute specifies the destination address.
+      The target attribute specifies where to open the linked document.
+      The target attribute can have one of the following values:
+    • _blank - Opens the linked document in a new window or tab 
+    • _self - Opens the linked document in the same window/tab as it was clicked (this is default) 
+    • _parent - Opens the linked document in the parent frame 
+    • _top - Opens the linked document in the full body of the window 
+    • framename - Opens the linked document in a named frame 
+11) IMAGES : To use an image as a link, simply nest the <img> tag inside the <a> tag:
+      <a href="default.asp">
+  <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;border:0;">
+</a> 
+Use the <map> tag to define an image-map. An image-map is an image with clickable areas.
+  <img src="planets.gif" alt="Planets" usemap="#planetmap" style="width:145px;height:126px;">
+
+<map name="planetmap">
+  <area shape="rect" coords="0,0,82,126" alt="Sun" href="sun.htm">
+  <area shape="circle" coords="90,58,3" alt="Mercury" href="mercur.htm">
+  <area shape="circle" coords="124,58,8" alt="Venus" href="venus.htm">
+</map> 
+To add a background image on an HTML element, use the CSS property background-image:
+<body style="background-image:url('skies.jpg')">
+The <picture> element contains a number of <source> elements, each referring to different image sources. This way the browser can choose the image that best fit the current view and/or device.
+<picture>
+<source media="(min-width: 650px)" srcset="img_pink_flowers.jpg">
+<source media="(min-width: 465px)" srcset="img_white_flower.jpg">
+<img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;">
+</picture> 
+
+12) TABLES : An HTML table is defined with the <table> tag. Each table row is defined with the <tr> tag. A table header is defined with the <th> tag. By default, table headings are bold and centered. A table data/cell is defined with the <td> tag.
+To add a caption to a table, use the <caption> tag.
+To define a special style for a special table, add an id attribute to the table.
+<table id="t01">
+table#t01 {
+    width: 100%; 
+    background-color: #f1f1c1;
+}
+Use the colspan attribute to make a cell span many columns .  Use the rowspan attribute to make a cell span many rows.
+Tag
+Description
+<table>
+Defines a table
+<th>
+Defines a header cell in a table
+<tr>
+Defines a row in a table
+<td>
+Defines a cell in a table
+<caption>
+Defines a table caption
+<colgroup>
+Specifies a group of one or more columns in a table for formatting
+<col>
+Specifies column properties for each column within a <colgroup> element
+<thead>
+Groups the header content in a table
+<tbody>
+Groups the body content in a table
+<tfoot>
+Groups the footer content in a table
+
+13)  LISTS :
+    • An unordered list starts with the <ul> tag. Each list item starts with the <li> tag. The list items will be marked with bullets (small black circles) by default.
+      <ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul> 
+      list-style-type property is used to define the style of the list item marker:
+Value
+Description
+disc
+Sets the list item marker to a bullet (default)
+circle
+Sets the list item marker to a circle
+square
+Sets the list item marker to a square
+none
+The list items will not be marked
+      <ul style="list-style-type:disc">
+    • An ordered list starts with the <ol> tag. Each list item starts with the <li> tag. The list items will be marked with numbers by default.
+      <ol>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol> 
+      The type attribute of the <ol> tag, defines the type of the list item marker:
+Type
+Description
+type="1"
+The list items will be numbered with numbers (default)
+type="A"
+The list items will be numbered with uppercase letters
+type="a"
+The list items will be numbered with lowercase letters
+type="I"
+The list items will be numbered with uppercase roman numbers
+type="i"
+The list items will be numbered with lowercase roman numbers
+      <ol type="1">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol> 
+    • HTML also supports description lists. A description list is a list of terms, with a description of each term. The <dl> tag defines the description list, the <dt> tag defines the term (name), and the <dd> tag describes each term.
+      <dl>
+  <dt>Coffee</dt>
+  <dd>- black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>- white cold drink</dd>
+</dl> 
+
+14) BLOCKS :
+    • A block-level element always starts on a new line and takes up the full width available. Examples of block-level elements:  <div> , <h1> - <h6> , <p> , <form> 
+    • An inline element does not start on a new line and only takes up as much width as necessary. Examples of inline elements:   <span> , <a> , <img> 
+Tag
+Description
+<div>
+Defines a section in a document (block-level)
+<span>
+Defines a section in a document (inline)
+
+15) CLASSES : The HTML class attribute makes it possible to define equal styles for elements with the same class name.
+div.cities {
+    background-color: black;
+    color: white;
+    margin: 20px 0 20px 0;
+    padding: 20px;
+} 
+<div class="cities">
+<h2>London</h2>
+<p>London is the capital of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+</div>
+16) IFRAMES : An iframe is used to display a web page within a web page.  An HTML iframe is defined with the <iframe> tag: (The src attribute specifies the URL (web address) of the inline frame page.)
+<iframe src="URL"></iframe> 
+Use the height and width attributes to specify the size of the iframe. 
+<iframe src="demo_iframe.htm" height="200" width="300"></iframe> 
+By default, an iframe has a border around it. To remove the border, 
+<iframe src="demo_iframe.htm" style="border:none;"></iframe> 
+you can also change the size, style and color of the iframe's border:
+<iframe src="demo_iframe.htm" style="border:2px solid grey;"></iframe> 
+
+An iframe can be used as the target frame for a link. The target attribute of the link must refer to the name attribute of the iframe:
+<iframe height="300px" width="100%" src="demo_iframe.htm" name="iframe_a"></iframe>
+
+<p><a href="https://www.w3schools.com" target="iframe_a">W3Schools.com</a></p>
+<p>When the target of a link matches the name of an iframe, the link will open in the iframe.</p>
+
+17) FILE PATHS : A file path describes the location of a file in a web site's folder structure. File paths are used when linking to external files like:
+    • Images 
+    • Style sheets 
+    • JavaScripts 
+    • Web pages
+Path
+Description
+<img src="picture.jpg">
+picture.jpg is located in the same folder as the current page
+<img src="images/picture.jpg">
+picture.jpg is located in the images folder in the current folder
+<img src="/images/picture.jpg">
+picture.jpg is located in the images folder at the root of the current web
+<img src="../picture.jpg">
+picture.jpg is located in the folder one level up from the current folder
+
+18) <head> ELEMENT : The <head> element is a container for metadata (data about data) and is placed between the <html> tag and the <body> tag. Metadata typically define the document title, character set, styles, links, scripts, and other meta information. The following tags describe metadata: <title>, <style>, <meta>, <link>, <script>, and <base>.
+    • <title> element : <title> element defines the title of the document, defines a title in the browser tab, provides a title for the page when it is added to favorites, displays a title for the page in search engine results.
+    • <style> element : The <style> element is used to define style information for a single HTML page.
+    • <link> element : The <link> element is used to link to external style sheets:
+      <link rel="stylesheet" href="mystyle.css"> 
+    • <meta> element :Metadata is used by browsers (how to display content), by search engines (keywords), and other web services.
+        Define the character set used,  Define a description of your web page,  Define keywords for search engines,  Define the author of a page,  Refresh document every 30 seconds. 
+      <meta charset="UTF-8">
+<meta name="description" content="Free Web tutorials">
+<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+<meta name="author" content="John Doe">
+      <meta http-equiv="refresh" content="30">
+    •  Setting the viewport: The viewport is the user's visible area of a web page.
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      A <meta> viewport element gives the browser instructions on how to control the page's dimensions and scaling. The width=device-width part sets the width of the page to follow the screen-width of the device . The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser
+    • <script> element : The <script> element is used to define client-side JavaScripts.
+    • <base> element : The <base> element specifies the base URL and base target for all relative URLs in a page:
+      <base href="https://www.w3schools.com/images/" target="_blank">
+
+19) LAYOUT ELEMENT : elements that define the different parts of a web page:
+    • <header> - Defines a header for a document or a section
+    • <nav> - Defines a container for navigation links
+    • <section> - Defines a section in a document
+    • <article> - Defines an independent self-contained article
+    • <aside> - Defines content aside from the content (like a sidebar)
+    • <footer> - Defines a footer for a document or a section
+    • <details> - Defines additional details
+    • <summary> - Defines a heading for the <details> element
+      There are four different ways to create multicolumn layouts:
+    • HTML tables
+    • CSS float property
+    • CSS framework
+    • CSS flexbox
+
+20) FORMS : The HTML <form> element defines a form that is used to collect user input. Form elements are different types of input elements, like text fields, checkboxes, radio buttons, submit buttons, and more.
+<input> type:
+Type
+Description
+<input type="text">
+Defines a one-line text input field
+<input type="radio">
+Defines a radio button (for selecting one of many choices)
+<input type="submit">
+Defines a submit button (for submitting the form)
+
+
+Attribute
+Description
+accept-charset
+Specifies the charset used in the submitted form (default: the page charset).
+action
+Specifies an address (url) where to submit the form (default: the submitting page).
+autocomplete
+Specifies if the browser should autocomplete the form (default: on).
+enctype
+Specifies the encoding of the submitted data (default: is url-encoded).
+method
+Specifies the HTTP method used when submitting the form (default: GET).
+name
+Specifies a name used to identify the form (for DOM usage: document.forms.name).
+novalidate
+Specifies that the browser should not validate the form.
+target
+Specifies the target of the address in the action attribute (default: _self).
+
+<select> element : The <option> elements defines an option that can be selected.  (By default volvo is selected)
+<select name="cars">
+  <option value="volvo" selected>Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="fiat">Fiat</option>
+  <option value="audi">Audi</option>
+</select> 
+
+<textarea> element : The <textarea> element defines a multi-line input field (a text area):
+<textarea name="message" rows="10" cols="30">
+The cat was playing in the garden.
+</textarea> 
+The rows attribute specifies the visible number of lines in a text area.  The cols attribute specifies the visible width of a text area.
+<button> element : The <button> element defines a clickable button.
+<button type="button" onclick="alert('Hello World!')">Click Me!</button> 
+
+Tag
+Description
+<form>
+Defines an HTML form for user input
+<input>
+Defines an input control
+<textarea>
+Defines a multiline input control (text area)
+<label>
+Defines a label for an <input> element
+<fieldset>
+Groups related elements in a form
+<legend>
+Defines a caption for a <fieldset> element
+<select>
+Defines a drop-down list
+<optgroup>
+Defines a group of related options in a drop-down list
+<option>
+Defines an option in a drop-down list
+<button>
+Defines a clickable button
+<datalist>
+Specifies a list of pre-defined options for input controls
+<output>
+Defines the result of a calculation
+
+INPUT TYPES:
+    • <input type="text"> defines a one-line text input field.    <input type="text" name="firstname">
+    • <input type="password"> defines a password field.    <input type="password" name="psw">
+    • <input type="submit"> defines a button for submitting form data to a form-handler. The form-handler is specified in the form's action attribute.
+      <input type="submit" value="Submit">
+    • <input type="reset"> defines a reset button that will reset all form values to their default values.      <input type="reset">
+    • <input type="radio"> defines a radio button.  
+      <input type="radio" name="gender" value="male" checked> Male<br>
+    • <input type="checkbox"> defines a checkbox. Checkboxes let a user select ZERO or MORE options of a limited number of choices.
+      <input type="checkbox" name="vehicle1" value="Bike"> I have a bike<br>
+    • <input type="button"> defines a button. 
+      <input type="button" onclick="alert('Hello World!')" value="Click Me!">
+       
+    • The <input type="color"> is used for input fields that should contain a color.
+      <input type="color" name="favcolor">
+    • The <input type="date"> is used for input fields that should contain a date. (NOT IN FIREFOX)
+      <input type="date" name="bday">
+      <input type="date" name="bday" max="1979-12-31"><br>
+      <input type="date" name="bday" min="2000-01-02"><br>
+    • The <input type="datetime-local"> specifies a date and time input field, with no time zone. (NOT IN FIREFOX)
+      <input type="datetime-local" name="bdaytime">
+    • The <input type="email"> is used for input fields that should contain an e-mail address. (NOT IN SAFARI 8)
+      <input type="email" name="email">
+    • The <input type="month"> allows the user to select a month and year. (NOT IN FIREFOX)
+      <input type="month" name="bdaymonth">
+    • The <input type="number"> defines a numeric input field.
+      <input type="number" name="quantity" min="1" max="5">
+    • The <input type="range"> defines a control for entering a number whose exact value is not important. Default range is 0 to 100.
+      <input type="range" name="points" min="0" max="10">
+    • The <input type="search"> is used for search fields (a search field behaves like a regular text field).
+      <input type="search" name="googlesearch">
+    • The <input type="tel"> is used for input fields that should contain a telephone number (ONLY IN SAFARI 8).
+      <input type="tel" name="usrtel">
+    • The <input type="time"> allows the user to select a time . (NOT IN FIREFOX)
+      <input type="time" name="usr_time">
+    • The <input type="url"> is used for input fields that should contain a URL address. (NOT IN SAFARI 8)
+      <input type="url" name="homepage">
+    • The <input type="week"> allows the user to select a week and year. (NOT IN FIREFOX)
+      <input type="week" name="week_year">
+INPUT ATTRIBUTES : 
+    • The value attribute specifies the initial value for an input field.
+      <input type="text" name="firstname" value="John">
+    • The readonly attribute specifies that the input field is read only
+      <input type="text" name="firstname" value="John" readonly>
+    • The disabled attribute specifies that the input field is disabled(unclickable).
+      <input type="text" name="firstname" value="John" disabled>
+    • The size attribute specifies the size (in characters) for the input field.
+      <input type="text" name="firstname" value="John" size="40">
+    • The maxlength attribute specifies the maximum allowed length for the input field.
+      <input type="text" name="firstname" maxlength="10">
+    • The autocomplete attribute specifies whether a form or input field should have autocomplete on or off. It is possible to have autocomplete "on" for the form, and "off" for specific input fields.  The autocomplete attribute works with <form> and the following <input> types: text, search, url, tel, email, password, datepickers, range, and color.
+      <form action="/action_page.php" autocomplete="on">
+  First name:<input type="text" name="fname"><br>
+  Last name: <input type="text" name="lname"><br>
+  E-mail: <input type="email" name="email" autocomplete="off"><br>
+    • The novalidate attribute is a <form> attribute.
+      <form action="/action_page.php" novalidate>
+    • The autofocus attribute specifies that the input field should automatically get focus when the page loads.
+      <input type="text" name="fname" autofocus>
+    • The form attribute specifies one or more forms an <input> element belongs to. An input field located outside the HTML form (but still a part of the form).
+      <form action="/action_page.php" id="form1">               
+  First name: <input type="text" name="fname"><br>
+  <input type="submit" value="Submit">
+</form>
+
+Last name: <input type="text" name="lname" form="form1"> 
+    • The formaction attribute specifies the URL of a file that will process the input control when the form is submitted. The formaction attribute overrides the action attribute of the <form> element.
+      <input type="submit" formaction="/action_page2.php"
+  value="Submit as admin">
+    • The formenctype attribute specifies how the form data should be encoded when submitted (only for forms with method="post"). The formenctype attribute overrides the enctype attribute of the <form> element.
+      <input type="submit" formenctype="multipart/form-data"
+  value="Submit as Multipart/form-data">
+    • The formmethod attribute defines the HTTP method for sending form-data to the action URL. The formmethod attribute overrides the method attribute of the <form> element.
+      <form action="/action_page.php" method="get">
+  First name: <input type="text" name="fname"><br>
+  Last name: <input type="text" name="lname"><br>
+  <input type="submit" value="Submit">
+  <input type="submit" formmethod="post" formaction="action_page_post.asp"
+  value="Submit using POST">
+</form> 
+    • The formnovalidate attribute overrides the novalidate attribute of the <form> element.
+      <input type="submit" formnovalidate value="Submit without validation">
+    • The formtarget attribute specifies a name or a keyword that indicates where to display the response that is received after submitting the form. The formtarget attribute overrides the target attribute of the <form> element.
+      <input type="submit" formtarget="_blank"
+  value="Submit to a new window">
+    • The height and width attributes specify the height and width of an <input type="image"> element.
+      <input type="image" src="img_submit.gif" alt="Submit" width="48" height="48"> 
+    • The list attribute refers to a <datalist> element that contains pre-defined options for an <input> element.
+      <input list="browsers">
+
+<datalist id="browsers">
+  <option value="Internet Explorer">
+  <option value="Firefox">
+  <option value="Chrome">
+  <option value="Opera">
+  <option value="Safari">
+</datalist> 
+    • The min and max attributes specify the minimum and maximum values for an <input> element. The min and max attributes work with the following input types: number, range, date, datetime-local, month, time and week.
+      <input type="date" name="bday" max="1979-12-31">
+<input type="date" name="bday" min="2000-01-02">
+      <input type="number" name="quantity" min="1" max="5">
+    • The multiple attribute specifies that the user is allowed to enter more than one value in the <input> element. The multiple attribute works with the following input types: email, and file.
+      <input type="file" name="img" multiple>
+    • The pattern attribute specifies a regular expression that the <input> element's value is checked against.The pattern attribute specifies a regular expression that the <input> element's value is checked against.
+      Country code: <input type="text" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code">
+    • The placeholder attribute specifies a hint that describes the expected value of an input field (a sample value or a short description of the format).The placeholder attribute works with the following input types: text, search, url, tel, email, and password.
+      <input type="text" name="fname" placeholder="First name"> 
+    • The required attribute specifies that an input field must be filled out before submitting the form. The required attribute works with the following input types: text, search, url, tel, email, password, date pickers, number, checkbox, radio, and file.
+      <input type="text" name="usrname" required>
+    • The step attribute specifies the legal number intervals for an <input> element.The step attribute works with the following input types: number, range, date, datetime-local, month, time and week.
+      <input type="number" name="points" step="3"> 
+
+
+
+HTML 5:
+
+HTML5 defines eight new semantic elements. All these are block-level elements.
+To secure correct behavior in older browsers,
+header, section, footer, aside, nav, main, article, figure{
+display: block;
+}
+
+NEW semantic / structural elements:
+
+Tag
+Description
+<article>
+Defines an article in a document
+<aside>
+Defines content aside from the page content
+<bdi>
+Isolates a part of text that might be formatted in a different direction from other text outside it
+<details>
+Defines additional details that the user can view or hide
+<dialog>
+Defines a dialog box or window
+<figcaption>
+Defines a caption for a <figure> element
+<figure>
+Defines self-contained content
+<footer>
+Defines a footer for a document or section
+<header>
+Defines a header for a document or section
+<main>
+Defines the main content of a document
+<mark>
+Defines marked/highlighted text
+<meter>
+Defines a scalar measurement within a known range (a gauge)
+<nav>
+Defines navigation links
+<progress>
+Represents the progress of a task
+<rp>
+Defines what to show in browsers that do not support ruby annotations
+<rt>
+Defines an explanation/pronunciation of characters (for East Asian typography)
+<ruby>
+Defines a ruby annotation (for East Asian typography)
+<section>
+Defines a section in a document
+<summary>
+Defines a visible heading for a <details> element
+<time>
+Defines a date/time
+<wbr>
+Defines a possible line-break
+
+
+NEW form elements:
+
+Tag
+Description
+<datalist>
+Specifies a list of pre-defined options for input controls
+<output>
+Defines the result of a calculation
+
+
+NEW Input types:
+
+New Input Types
+New Input Attributes
+    • color
+    • date
+    • datetime
+    • datetime-local
+    • email
+    • month
+    • number
+    • range
+    • search
+    • tel
+    • time
+    • url
+    • week
+    • autocomplete
+    • autofocus
+    • form
+    • formaction
+    • formenctype
+    • formmethod
+    • formnovalidate
+    • formtarget
+    • height and width
+    • list
+    • min and max
+    • multiple
+    • pattern (regexp)
+    • placeholder
+    • required
+    • step
+
+HTML Graphics
+
+Tag
+Description
+<canvas>
+Draw graphics, on the fly, via scripting (usually JavaScript)
+<svg>
+Draw scalable vector graphics
+
+NEW media elements:
+Tag
+Description
+<audio>
+Defines sound content
+<embed>
+Defines a container for an external (non-HTML) application
+<source>
+Defines multiple media resources for media elements (<video> and <audio>)
+<track>
+Defines text tracks for media elements (<video> and <audio>)
+<video>
+Defines video or movie
