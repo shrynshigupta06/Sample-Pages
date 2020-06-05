@@ -1,0 +1,177 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	font-family: sans-serif;
+	line-height: 1.5em;
+}
+
+/*in each section, creates flex*/
+.container{
+	width: 80%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+/*headr block*/
+.header{
+	background-color: #35424A;
+	color: white;
+	padding: 20px 20px 10px 0px;
+	border-bottom: 5px solid #E8491D;
+}
+
+/*All lists*/
+ul{
+	list-style: none;
+	margin-top: 20px;
+}
+/*site name*/
+.logo{
+	float: left;
+}
+/*nav bar*/
+.header nav{
+	float: right;
+}
+
+.header a{
+	text-decoration: none;
+	color: white; 
+}
+
+.header li {
+	display: inline;
+	padding: 20px;
+}
+
+.header a:hover{
+	font-weight: bold;
+}
+.header a:active{
+	color: #E8491D;
+}
+
+.logo h1, .news-head h1{
+	font-size: 24px;
+	font-weight: bold;
+}
+
+#acme{
+	color: #E8491D;
+}
+/*one with back image*/
+.main{
+	background: url('../img/cover.jpg');
+	min-height: 400px;
+}
+
+.content-container{
+	width: 80%;
+	margin: auto;
+	color: white;
+	text-align: center;
+	align-items: center;
+}
+
+.content-container{
+	margin: auto;
+	padding: 120px;
+	font-size: 60px;
+	font-weight: bold;
+}
+
+.desc{
+	font-size: 20px;
+	font-weight: normal;
+}
+
+
+.newsletter{
+	background-color: #35424A;
+	color: white;
+	padding: 30px;
+}
+
+.subscribe{
+	align-self: center;
+}
+.subscribe input{
+	padding: 5px;
+	height: 25px;
+	width: 250px;
+}
+.subscribe button, .quote button{
+	height: 40px;
+	background-color: #E8491D;
+	color: white;
+	border: none;
+}
+
+.technology{
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+
+.box{
+	width: 30%;
+	padding: 10px;
+	text-align: center;
+	justify-content: center;
+}
+.box img{
+	width: 90px;
+	height: 90px;
+	justify-content: center;
+}
+
+/*about page*/
+.ab, .service{
+	width: 65%;
+	float: left;
+	margin-bottom: 20px;
+}
+
+.darkblock{
+	background-color: #35424A;
+	color: white;
+	padding: 20px;
+}
+
+.do, .quote{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 30%;
+	float: right;
+}
+
+.ser{
+	background-color: #E6E6E6;
+	padding: 15px;
+	margin: 5px;
+}
+
+.quote input{
+	padding: 5px;
+	height: 20px;
+	width: 90%;
+	margin-bottom: 10px;
+}
+
+.footer{
+	padding: 20px;
+	background-color: #E8491D;
+	color: white;
+	text-align: center;
+	font-size: 14px;
+}
+
+
+
+/* mobile friendly*/
+
+@media (max-width: 768px){
+	body{
+		display: none;
+	}
+}
