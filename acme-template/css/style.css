@@ -4,12 +4,14 @@ body{
 	font-size: 16px;
 	font-family: sans-serif;
 	line-height: 1.5em;
+	width: 100%;
 }
 
 /*in each section, creates flex*/
 .container{
 	width: 80%;
 	margin: auto;
+	align-items: center;
 	display: flex;
 	justify-content: space-between;
 }
@@ -42,7 +44,7 @@ ul{
 
 .header li {
 	display: inline;
-	padding: 20px;
+	padding: 15px;
 }
 
 .header a:hover{
@@ -71,18 +73,18 @@ ul{
 	margin: auto;
 	color: white;
 	text-align: center;
-	align-items: center;
-}
-
-.content-container{
-	margin: auto;
-	padding: 120px;
+	padding-top: 120px;
 	font-size: 60px;
+	line-height: 1em;
 	font-weight: bold;
+	margin-bottom: -60px;
 }
 
 .desc{
 	font-size: 20px;
+	line-height: 1.7em;
+	padding-top: 20px;
+	padding-bottom: 30px;
 	font-weight: normal;
 }
 
@@ -100,6 +102,7 @@ ul{
 	padding: 5px;
 	height: 25px;
 	width: 250px;
+	margin-bottom: 10px;
 }
 .subscribe button, .quote button{
 	height: 40px;
@@ -171,7 +174,40 @@ ul{
 /* mobile friendly*/
 
 @media (max-width: 768px){
-	body{
-		display: none;
+	.container{
+		display: block;
+		width: 80%;
 	}
+	.header{
+		text-align: center;
+		float: none;
+	}
+	.logo, .header nav, .ab, .do, .service, .quote, .box{
+		width: 100%;
+		float: none;
+	}
+	ul{
+		padding: 20px;
+		padding-bottom: 10px;
+	}
+	.main{
+		width:100%;
+		text-align: center;
+		min-height: 400px;
+	}
+	.content-container{
+		line-height: 1.25em;
+
+	}
+	.newsletter > .container{
+		text-align: center;
+		display: block;
+	}
+	.subscribe input{
+		margin-bottom: 10px;
+	}
+	.subscribe button{
+		width: 260px;
+	}
+	
 }

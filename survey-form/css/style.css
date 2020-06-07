@@ -1,0 +1,88 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-size: 24px;
+	background-image: url('../img/back.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	height:100%;
+	background-size: cover;
+	color: white;
+}
+
+.main-container{
+	width: 70%;
+	margin: auto;
+	opacity: 0.8;
+}
+h1{
+	padding-top: 50px;
+	font-size: 50px;
+	text-align: center;
+	color: white;
+}
+p{
+	color: white;
+	text-align: center;
+}
+.form-container{
+	background-color: #676789;
+	padding: 40px;
+}
+
+input, textarea{
+	width: 96%;
+	font-size: 18px;
+	padding: 12px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	border-style: none;
+	background-color: #dbd9d9;
+}
+select{
+	width: 100%;
+	font-size: 18px;
+	padding: 12px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	border-style: none;
+	background-color: #dbd9d9;
+}
+
+.btn-container{
+	margin-bottom: 20px;
+	color: white;
+}
+
+input[type=radio], input[type=checkbox] {
+	margin-bottom: 0px;
+	height: 20px;
+	width: 20px;
+}
+span{
+	padding-left: 10px;
+}
+.button{
+	width: 100%;
+	background-color: green;
+	color: white;
+	opacity: 1;
+}
+
+textarea:active, textarea:focus, input:active, input:focus, select:active, select:focus{
+	outline: none;
+	background-color: white;
+}
+ .button:active, .button:focus{
+ 	outline: none;
+ 	background-color: green;
+ }
+
+
+ @media (max-width: 630px){
+ 	.main-container{
+ 		width: 100%;
+ 	}
+ }
