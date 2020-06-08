@@ -60,7 +60,7 @@ ul{
 	padding: 5px;
 	margin-bottom: 15px;
 }
-.main button{
+.main .button{
 	font-size: 20px;
 	font-weight: bold;
 	width: 35%;
@@ -69,7 +69,7 @@ ul{
 	padding: 10px;
 	outline: none;
 }
-.main button:hover, .card button:hover{
+.main .button:hover, .card button:hover{
 	background-color: #EDC607;
 }
 

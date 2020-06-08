@@ -11,29 +11,33 @@
 
 <body>
 	<div class="main-container">
-		<div class="header">
+		<div id="header" class="header">
 			<div class="container">
 				<div class="head-line">
-					<img src="./img/original_trombones_logo.png" alt="none">
+					<img id="header-img" src="./img/original_trombones_logo.png" alt="none">
 				</div>
 				<div class="navbar">
-					<ul>
-						<li><a href="">Features</a></li>
-						<li><a href="">How It Works</a></li>
-						<li><a href="">Pricing</a></li>
-					</ul>
+					<nav id="navbar">
+						<ul>
+							<li class="nav-link"><a href="#features">Features</a></li>
+							<li class="nav-link"><a href="#works">How It Works</a></li>
+							<li class="nav-link"><a href="#pricing">Pricing</a></li>
+						</ul>
+					</nav>
 				</div>
 			</div>
 		</div>
 
 		<div class="main">
 			<h1>Handcrafted, home-made materpieces</h1>
-			<input type="email" name="email" placeholder="Enter your email address">
-			<br>
-			<button type="submit">GET STARTED</button>
+			<form id="form">
+				<input id="email" type="email" name="email" placeholder="Enter your email address" required>
+				<br>
+				<input id="submit" class="button" type="submit" value="GET STARTED"></input>
+			</form>
 		</div>
 
-		<div class="features">
+		<div class="features" id="features">
 			<div class="feature-element">
 				<div class="feature-img">
 					<img src="./img/lit.jpg" alt="none">
@@ -62,14 +66,13 @@
 				</div>
 			</div>
 
-			<div class="works">
+			<div class="works" id="works">
 				<div class="video-container">
-					<iframe src="https://www.youtube.com/embed/y8Yv4pnO7qc"></iframe>
-					
+					<iframe id="video" src="https://www.youtube.com/embed/y8Yv4pnO7qc"></iframe>
 				</div>
 			</div>
 
-			<div class="pricing">
+			<div class="pricing" id="pricing">
 				<div class="container">
 					<div class="card">
 						<div class="card-head"><h3>Tenor Trombone</h3></div>
