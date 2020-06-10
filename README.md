@@ -1,4 +1,12 @@
 # Web Development Basics
 
-Static Pages using HTML & CSS only
+Started hands on with front-end basics.
+
+Stuffs covered:
+
+- Static and responsive pages using HTML and CSS only.
+
+Sources referred:
+- Traversy Media 
+- freecodecamp
 
