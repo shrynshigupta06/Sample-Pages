@@ -6,7 +6,11 @@ Stuffs covered:
 
 - Static and responsive pages using HTML and CSS only.
 
+- Used some basics of JavaScript
+
 Sources referred:
-- Traversy Media 
-- freecodecamp
+- Traversy Media : Web Development Course
+- freecodecamp : Responsive Web Development
+
+
 
